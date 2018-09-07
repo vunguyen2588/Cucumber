@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/Project/Sample/Demo.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/sample/Demo.feature");
 formatter.feature({
   "line": 1,
   "name": "Guru Testing",
@@ -31,6 +31,16 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
+  "name": "I create a new account",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "I deposit to new account",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
   "name": "I close the browser",
   "keyword": "Then "
 });
@@ -38,28 +48,42 @@ formatter.match({
   "location": "DefinitionGuru.iNavigateGuru99()"
 });
 formatter.result({
-  "duration": 14556671678,
+  "duration": 26527877917,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionGuru.iLoginGuru99()"
 });
 formatter.result({
-  "duration": 3333513615,
+  "duration": 2908397603,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionGuru.iCreateNewCustomer()"
 });
 formatter.result({
-  "duration": 5707255732,
+  "duration": 5114749040,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DefinitionGuru.iCreateNewAccount()"
+});
+formatter.result({
+  "duration": 5291328959,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DefinitionGuru.iDepositToNewAccount()"
+});
+formatter.result({
+  "duration": 13396988845,
   "status": "passed"
 });
 formatter.match({
   "location": "DefinitionGuru.close_browser()"
 });
 formatter.result({
-  "duration": 950295476,
+  "duration": 991741041,
   "status": "passed"
 });
 });
