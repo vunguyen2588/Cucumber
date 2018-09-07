@@ -1,5 +1,5 @@
 Feature: Guru Testing
-  Scenario: Gmail Login
-    Given Open 
-    And 
-    Then Close browser
+  Scenario: User login to Guru99
+    Given I navigate to the guru99
+    And I login to the Guru99
+    Then I close the browser

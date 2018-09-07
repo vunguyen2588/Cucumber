@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/Gmail/Demo/Demo.feature",
+		features = "src/test/java/Project/Sample/Demo.feature",
 		format = { "pretty", "html:target/Reports" })
 public class RunnerClass {
 
