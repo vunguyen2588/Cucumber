@@ -2,11 +2,16 @@ package sample;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -79,14 +84,19 @@ public class DefinitionGuru {
 		obj.quit();
 	}
 	
-	@And("^I open application in (Chrome|Firefox|Safari) browser$")
-	public void loginToSystem(String browser)  {
-		if(browser.equalsIgnoreCase("Chrome")) {
-	    	//	Code to launch Chrome
-	    } else if(browser.equalsIgnoreCase("Firefox")) {
-	    	//	Code to launch Firefox
-	    } else if(browser.equalsIgnoreCase("Safari")) {
-	    	// 	Code to launch Safari
-	    }
+	
+	
+	@And("^I create the new account form with the following data$")
+	public void createNewAccountWithFollowingData(DataTable dt)  {
+		List<List<String>> list = dt.asLists(String.class);
+		//	i starts from 1 because i=0 represents the header
+		for(int i=1; i<list.size(); i++) {
+			System.out.println(list.get(i).get(0)); 
+			System.out.println(list.get(i).get(1));
+			System.out.println(list.get(i).get(2));
+			System.out.println(list.get(i).get(3));
+			System.out.println(list.get(i).get(4));
+			System.out.println(list.get(i).get(5));
+		}
 	}
 }

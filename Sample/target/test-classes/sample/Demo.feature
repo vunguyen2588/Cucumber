@@ -10,7 +10,10 @@ Feature: Guru Testing
  Scenario: Testing 
  
  
- And I open application in Chrome browser
+And I create the new account form with the following data
+		| First Name | Last Name | Phone No  	| Password | DOB Year  | Gender |
+		| Test FN 	 | Test LN 	 | 0123123123 | Pass1234 | 1990      | Male   |
+
 
   
   

@@ -50,24 +50,38 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "I login with user abc and password 123456",
+  "name": "I create the new account form with the following data",
+  "rows": [
+    {
+      "cells": [
+        "First Name",
+        "Last Name",
+        "Phone No",
+        "Password",
+        "DOB Year",
+        "Gender"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "Test FN",
+        "Test LN",
+        "0123123123",
+        "Pass1234",
+        "1990",
+        "Male"
+      ],
+      "line": 15
+    }
+  ],
   "keyword": "And "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "abc",
-      "offset": 18
-    },
-    {
-      "val": "123456",
-      "offset": 35
-    }
-  ],
-  "location": "DefinitionGuru.loginToSystem(String,String)"
+  "location": "DefinitionGuru.createNewAccountWithFollowingData(DataTable)"
 });
 formatter.result({
-  "duration": 156150335,
+  "duration": 170158423,
   "status": "passed"
 });
 });
