@@ -78,4 +78,15 @@ public class DefinitionGuru {
 	public void close_browser() {
 		obj.quit();
 	}
+	
+	@And("^I open application in (Chrome|Firefox|Safari) browser$")
+	public void loginToSystem(String browser)  {
+		if(browser.equalsIgnoreCase("Chrome")) {
+	    	//	Code to launch Chrome
+	    } else if(browser.equalsIgnoreCase("Firefox")) {
+	    	//	Code to launch Firefox
+	    } else if(browser.equalsIgnoreCase("Safari")) {
+	    	// 	Code to launch Safari
+	    }
+	}
 }

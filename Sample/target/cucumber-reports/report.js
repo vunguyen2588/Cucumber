@@ -7,83 +7,67 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 2,
-  "name": "User login to Guru99",
+  "comments": [
+    {
+      "line": 2,
+      "value": "#Scenario:"
+    },
+    {
+      "line": 3,
+      "value": "#User login to Guru99"
+    },
+    {
+      "line": 4,
+      "value": "#Given I navigate to the guru99"
+    },
+    {
+      "line": 5,
+      "value": "#And I login to the Guru99"
+    },
+    {
+      "line": 6,
+      "value": "#And I create a new customer"
+    },
+    {
+      "line": 7,
+      "value": "#And I create a new account"
+    },
+    {
+      "line": 8,
+      "value": "#And I deposit to new account"
+    },
+    {
+      "line": 9,
+      "value": "#Then I close the browser"
+    }
+  ],
+  "line": 10,
+  "name": "Testing",
   "description": "",
-  "id": "guru-testing;user-login-to-guru99",
+  "id": "guru-testing;testing",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 3,
-  "name": "I navigate to the guru99",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 4,
-  "name": "I login to the Guru99",
+  "line": 13,
+  "name": "I login with user abc and password 123456",
   "keyword": "And "
 });
-formatter.step({
-  "line": 5,
-  "name": "I create a new customer",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 6,
-  "name": "I create a new account",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "I deposit to new account",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "I close the browser",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "DefinitionGuru.iNavigateGuru99()"
+  "arguments": [
+    {
+      "val": "abc",
+      "offset": 18
+    },
+    {
+      "val": "123456",
+      "offset": 35
+    }
+  ],
+  "location": "DefinitionGuru.loginToSystem(String,String)"
 });
 formatter.result({
-  "duration": 26527877917,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DefinitionGuru.iLoginGuru99()"
-});
-formatter.result({
-  "duration": 2908397603,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DefinitionGuru.iCreateNewCustomer()"
-});
-formatter.result({
-  "duration": 5114749040,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DefinitionGuru.iCreateNewAccount()"
-});
-formatter.result({
-  "duration": 5291328959,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DefinitionGuru.iDepositToNewAccount()"
-});
-formatter.result({
-  "duration": 13396988845,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DefinitionGuru.close_browser()"
-});
-formatter.result({
-  "duration": 991741041,
+  "duration": 156150335,
   "status": "passed"
 });
 });
