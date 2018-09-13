@@ -1,0 +1,58 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "User login to Guru99",
+        "id": "guru-testing;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15895881236,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to the guru99",
+            "match": {
+              "location": "DefinitionGuru.iNavigateGuru99()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3664984731,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login to the Guru99",
+            "match": {
+              "location": "DefinitionGuru.iLoginGuru99()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 972663467,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I close the browser",
+            "match": {
+              "location": "DefinitionGuru.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Guru Testing",
+    "description": "",
+    "id": "guru-testing",
+    "keyword": "Feature",
+    "uri": "src/test/java/sample/ReportSample.feature"
+  }
+]

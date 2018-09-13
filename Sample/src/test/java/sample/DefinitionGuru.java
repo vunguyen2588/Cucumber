@@ -83,20 +83,6 @@ public class DefinitionGuru {
 	public void close_browser() {
 		obj.quit();
 	}
+
 	
-	
-	
-	@And("^I create the new account form with the following data$")
-	public void createNewAccountWithFollowingData(DataTable dt)  {
-		List<List<String>> list = dt.asLists(String.class);
-		//	i starts from 1 because i=0 represents the header
-		for(int i=1; i<list.size(); i++) {
-			System.out.println(list.get(i).get(0)); 
-			System.out.println(list.get(i).get(1));
-			System.out.println(list.get(i).get(2));
-			System.out.println(list.get(i).get(3));
-			System.out.println(list.get(i).get(4));
-			System.out.println(list.get(i).get(5));
-		}
-	}
 }

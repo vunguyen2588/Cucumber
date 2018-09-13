@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/sample/Demo.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/sample/ReportSample.feature");
 formatter.feature({
   "line": 1,
   "name": "Guru Testing",
@@ -7,81 +7,47 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Scenario:"
-    },
-    {
-      "line": 3,
-      "value": "#User login to Guru99"
-    },
-    {
-      "line": 4,
-      "value": "#Given I navigate to the guru99"
-    },
-    {
-      "line": 5,
-      "value": "#And I login to the Guru99"
-    },
-    {
-      "line": 6,
-      "value": "#And I create a new customer"
-    },
-    {
-      "line": 7,
-      "value": "#And I create a new account"
-    },
-    {
-      "line": 8,
-      "value": "#And I deposit to new account"
-    },
-    {
-      "line": 9,
-      "value": "#Then I close the browser"
-    }
-  ],
-  "line": 10,
-  "name": "Testing",
-  "description": "",
-  "id": "guru-testing;testing",
+  "line": 2,
+  "name": "",
+  "description": "User login to Guru99",
+  "id": "guru-testing;",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
-  "name": "I create the new account form with the following data",
-  "rows": [
-    {
-      "cells": [
-        "First Name",
-        "Last Name",
-        "Phone No",
-        "Password",
-        "DOB Year",
-        "Gender"
-      ],
-      "line": 14
-    },
-    {
-      "cells": [
-        "Test FN",
-        "Test LN",
-        "0123123123",
-        "Pass1234",
-        "1990",
-        "Male"
-      ],
-      "line": 15
-    }
-  ],
+  "line": 4,
+  "name": "I navigate to the guru99",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I login to the Guru99",
   "keyword": "And "
 });
+formatter.step({
+  "line": 6,
+  "name": "I close the browser",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "DefinitionGuru.createNewAccountWithFollowingData(DataTable)"
+  "location": "DefinitionGuru.iNavigateGuru99()"
 });
 formatter.result({
-  "duration": 170158423,
+  "duration": 12557207837,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DefinitionGuru.iLoginGuru99()"
+});
+formatter.result({
+  "duration": 4053707529,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DefinitionGuru.close_browser()"
+});
+formatter.result({
+  "duration": 900364402,
   "status": "passed"
 });
 });
