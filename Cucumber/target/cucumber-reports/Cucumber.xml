@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.043729">
-<testcase classname="Login Guru99" name="The user can login to Guru99 successfully with the right user and password" time="26.043729">
-<system-out><![CDATA[Given I navigate to the guru99..............................................passed
-And I input the right user..................................................passed
-And I input the right password..............................................passed
-And I click login button....................................................passed
-Then I verify login successfylly............................................passed
-]]></system-out>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0">
+<testcase classname="Login Guru99" name="The user can login to Guru99 successfully with the right user and password" time="0">
+<skipped><![CDATA[Given I navigate to the guru99..............................................undefined
+And I input the right user..................................................undefined
+And I input the right password..............................................undefined
+And I click login button....................................................undefined
+Then I verify login successfylly............................................undefined
+]]></skipped>
 </testcase>
 </testsuite>
